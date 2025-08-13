@@ -186,6 +186,36 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize counter animation
     animateCounters();
     
+    // FAQ Dropdown Functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const faqItem = this.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const icon = this.querySelector('i');
+            
+            // Close other open FAQs
+            faqQuestions.forEach(otherQuestion => {
+                if (otherQuestion !== question) {
+                    const otherItem = otherQuestion.parentElement;
+                    const otherAnswer = otherItem.querySelector('.faq-answer');
+                    const otherIcon = otherQuestion.querySelector('i');
+                    otherAnswer.classList.add('hidden');
+                    otherIcon.classList.remove('rotate-180');
+                }
+            });
+            
+            // Toggle current FAQ
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        });
+    });
+    
     // Close mobile menu on resize to larger screen
     window.addEventListener('resize', () => {
         if (window.innerWidth >= 1024 && mobileMenuOpen) {

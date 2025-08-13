@@ -832,7 +832,7 @@
             <div class="relative max-w-4xl mx-auto">
                 <!-- Testimonial Cards -->
                 <div class="testimonial-slider">
-                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl active">
+                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl mb-6">
                         <div class="text-center">
                             <div class="flex justify-center mb-6">
                                 <i class="fas fa-star text-yellow-400 text-xl"></i>
@@ -851,8 +851,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl hidden">
+                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl mb-6">
                         <div class="text-center">
                             <div class="flex justify-center mb-6">
                                 <i class="fas fa-star text-yellow-400 text-xl"></i>
@@ -871,8 +870,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl hidden">
+                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl mb-6">
                         <div class="text-center">
                             <div class="flex justify-center mb-6">
                                 <i class="fas fa-star text-yellow-400 text-xl"></i>
@@ -893,12 +891,7 @@
                     </div>
                 </div>
                 
-                <!-- Navigation Dots -->
-                <div class="flex justify-center mt-8 space-x-3">
-                    <button class="w-3 h-3 rounded-full bg-purple-600 transition-all duration-300 dot active" onclick="currentSlide(1)"></button>
-                    <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-purple-400 transition-all duration-300 dot" onclick="currentSlide(2)"></button>
-                    <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-purple-400 transition-all duration-300 dot" onclick="currentSlide(3)"></button>
-                </div>
+                <!-- No navigation needed for static testimonials -->
             </div>
         </div>
     </section>
@@ -997,7 +990,7 @@
                 
                 <!-- Flowing certificates container -->
                 <div class="certificates-flow overflow-hidden">
-                    <div class="certificates-track flex gap-6 animate-certificate-scroll">
+                    <div class="certificates-track flex gap-6">
                         <!-- Certificate items with actual images -->
                         <div class="certificate-item flex-shrink-0 w-80">
                             <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center border border-gray-200 group cursor-pointer" onclick="openCertificateModal('certife/STAR COMPUTER CENTER.png')">
