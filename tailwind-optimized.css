@@ -85,25 +85,193 @@
     }
 }
 
-/* Course card optimizations */
-.course-card {
-    transition: transform 0.3s ease;
-    transform-style: preserve-3d;
+/* Course card optimizations with fixed flip */
+.course-card-container {
     perspective: 1000px;
+    height: 280px; /* Fixed height for all cards */
 }
 
-.course-card:hover {
+.course-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.course-card.flipped {
     transform: rotateY(180deg);
 }
 
 .course-card-front,
 .course-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    background: white;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
 }
 
 .course-card-back {
     transform: rotateY(180deg);
+    padding: 8px !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.course-card-back h3 {
+    font-size: 0.95rem !important;
+    margin-bottom: 6px !important;
+    line-height: 1.2 !important;
+}
+
+.course-card-back h4 {
+    font-size: 0.8rem !important;
+    margin-bottom: 6px !important;
+    line-height: 1.2 !important;
+}
+
+.course-card-back ul {
+    margin-bottom: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.course-card-back li {
+    font-size: 0.7rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 2px !important;
+}
+
+.course-card-back .grid {
+    gap: 6px !important;
+    margin-bottom: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+.course-card-back .grid div {
+    font-size: 0.7rem !important;
+}
+
+.course-card-back .grid span {
+    font-size: 0.65rem !important;
+    font-weight: 600 !important;
+    display: block !important;
+}
+
+.course-card-back .grid p {
+    font-size: 0.65rem !important;
+    margin: 0 !important;
+    line-height: 1.1 !important;
+}
+
+.course-card-back .enroll-btn {
+    padding: 6px 12px !important;
+    font-size: 0.75rem !important;
+    margin-top: auto !important;
+    flex-shrink: 0 !important;
+}
+
+.course-card-back .flip-back-btn {
+    font-size: 0.9rem !important;
+    padding: 2px !important;
+}
+
+.course-card-back .flex-grow {
+    flex: 1 !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.course-card-back .flex-grow ul {
+    flex: 1 !important;
+    min-height: 0 !important;
+}
+
+.course-card:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive card heights */
+@media (max-width: 640px) {
+    .course-card-container {
+        height: 260px;
+    }
+    
+    .course-card-back {
+        padding: 6px !important;
+    }
+    
+    .course-card-back h3 {
+        font-size: 0.85rem !important;
+        margin-bottom: 4px !important;
+    }
+    
+    .course-card-back h4 {
+        font-size: 0.75rem !important;
+        margin-bottom: 4px !important;
+    }
+    
+    .course-card-back li {
+        font-size: 0.65rem !important;
+        margin-bottom: 1px !important;
+    }
+    
+    .course-card-back .grid {
+        gap: 4px !important;
+        margin-bottom: 6px !important;
+    }
+    
+    .course-card-back .grid span,
+    .course-card-back .grid p {
+        font-size: 0.6rem !important;
+    }
+    
+    .course-card-back .enroll-btn {
+        padding: 4px 8px !important;
+        font-size: 0.7rem !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .course-card-container {
+        height: 300px;
+    }
+    
+    .course-card-back {
+        padding: 10px !important;
+    }
+    
+    .course-card-back h3 {
+        font-size: 1rem !important;
+        margin-bottom: 8px !important;
+    }
+    
+    .course-card-back h4 {
+        font-size: 0.85rem !important;
+    }
+    
+    .course-card-back li {
+        font-size: 0.75rem !important;
+        margin-bottom: 3px !important;
+    }
+    
+    .course-card-back .grid span,
+    .course-card-back .grid p {
+        font-size: 0.7rem !important;
+    }
+    
+    .course-card-back .enroll-btn {
+        padding: 8px 14px !important;
+        font-size: 0.8rem !important;
+    }
 }
 
 /* Critical loading optimizations */

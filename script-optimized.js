@@ -92,10 +92,50 @@
         showSlide(currentSlide);
     }, 5000);
     
+    // Optimized course card flipping
+    function setupCourseCards() {
+        const courseCards = document.querySelectorAll('.course-card');
+        
+        courseCards.forEach(card => {
+            const learnMoreBtn = card.querySelector('.learn-more-btn');
+            const flipBackBtn = card.querySelector('.flip-back-btn');
+            
+            // Learn More button - flip to back
+            if (learnMoreBtn) {
+                learnMoreBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    card.classList.add('flipped');
+                });
+            }
+            
+            // Flip back button - return to front
+            if (flipBackBtn) {
+                flipBackBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    card.classList.remove('flipped');
+                });
+            }
+            
+            // Click outside to flip back
+            document.addEventListener('click', (e) => {
+                if (!card.contains(e.target)) {
+                    card.classList.remove('flipped');
+                }
+            });
+        });
+    }
+    
     // Optimized course filtering
     function filterCourses(category) {
         const courses = document.querySelectorAll('.course-card-container');
         const buttons = document.querySelectorAll('.filter-btn');
+        
+        // Reset all cards to front before filtering
+        document.querySelectorAll('.course-card').forEach(card => {
+            card.classList.remove('flipped');
+        });
         
         // Update active button
         buttons.forEach(btn => {
@@ -109,11 +149,32 @@
             btn.classList.toggle('active', isActive);
         });
         
-        // Filter courses
-        courses.forEach(course => {
+        // Filter courses with animation
+        courses.forEach((course, index) => {
             const courseCategory = course.getAttribute('data-category');
             const shouldShow = category === 'all' || courseCategory === category;
-            course.style.display = shouldShow ? 'block' : 'none';
+            
+            setTimeout(() => {
+                if (shouldShow) {
+                    course.style.display = 'block';
+                    course.style.opacity = '0';
+                    course.style.transform = 'translateY(20px)';
+                    
+                    setTimeout(() => {
+                        course.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                        course.style.opacity = '1';
+                        course.style.transform = 'translateY(0)';
+                    }, 50);
+                } else {
+                    course.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+                    course.style.opacity = '0';
+                    course.style.transform = 'translateY(-20px)';
+                    
+                    setTimeout(() => {
+                        course.style.display = 'none';
+                    }, 200);
+                }
+            }, index * 50);
         });
     }
     
@@ -167,6 +228,7 @@
         // Initialize components
         setupFAQ();
         setupMobileMenu();
+        setupCourseCards();
         
         // Setup course filter event listeners
         document.querySelectorAll('.filter-btn').forEach(btn => {
