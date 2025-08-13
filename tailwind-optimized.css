@@ -85,10 +85,40 @@
     }
 }
 
-/* Course card optimizations with fixed flip */
+/* Enhanced Button Animations */
+@keyframes buttonGlow {
+    0%, 100% { 
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    50% { 
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.1);
+    }
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%) skewX(-12deg); }
+    100% { transform: translateX(300%) skewX(-12deg); }
+}
+
+@keyframes floatUp {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-5px) scale(1.02); }
+}
+
+/* Button hover effects */
+.hero-buttons button:hover {
+    animation: floatUp 2s ease-in-out infinite;
+}
+
+.hero-buttons button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* Course card optimizations with clean white design */
 .course-card-container {
     perspective: 1000px;
-    height: 280px; /* Fixed height for all cards */
+    height: 350px; /* Increased height for better content display */
 }
 
 .course-card {
@@ -98,6 +128,10 @@
     transition: transform 0.6s ease;
     transform-style: preserve-3d;
     cursor: pointer;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
 }
 
 .course-card.flipped {
@@ -112,165 +146,50 @@
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     background: white;
-    border: 1px solid #e5e7eb;
     overflow: hidden;
+    border: 1px solid #e5e7eb;
 }
 
 .course-card-back {
     transform: rotateY(180deg);
-    padding: 8px !important;
+    padding: 24px !important;
     display: flex !important;
     flex-direction: column !important;
-}
-
-.course-card-back h3 {
-    font-size: 0.95rem !important;
-    margin-bottom: 6px !important;
-    line-height: 1.2 !important;
-}
-
-.course-card-back h4 {
-    font-size: 0.8rem !important;
-    margin-bottom: 6px !important;
-    line-height: 1.2 !important;
-}
-
-.course-card-back ul {
-    margin-bottom: 8px !important;
-    flex-shrink: 0 !important;
-}
-
-.course-card-back li {
-    font-size: 0.7rem !important;
-    line-height: 1.2 !important;
-    margin-bottom: 2px !important;
-}
-
-.course-card-back .grid {
-    gap: 6px !important;
-    margin-bottom: 8px !important;
-    flex-shrink: 0 !important;
-}
-
-.course-card-back .grid div {
-    font-size: 0.7rem !important;
-}
-
-.course-card-back .grid span {
-    font-size: 0.65rem !important;
-    font-weight: 600 !important;
-    display: block !important;
-}
-
-.course-card-back .grid p {
-    font-size: 0.65rem !important;
-    margin: 0 !important;
-    line-height: 1.1 !important;
-}
-
-.course-card-back .enroll-btn {
-    padding: 6px 12px !important;
-    font-size: 0.75rem !important;
-    margin-top: auto !important;
-    flex-shrink: 0 !important;
-}
-
-.course-card-back .flip-back-btn {
-    font-size: 0.9rem !important;
-    padding: 2px !important;
-}
-
-.course-card-back .flex-grow {
-    flex: 1 !important;
-    min-height: 0 !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-}
-
-.course-card-back .flex-grow ul {
-    flex: 1 !important;
-    min-height: 0 !important;
 }
 
 .course-card:hover {
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive card heights */
+/* Responsive card heights - Clean and consistent */
 @media (max-width: 640px) {
     .course-card-container {
-        height: 260px;
+        height: 320px;
     }
     
     .course-card-back {
-        padding: 6px !important;
+        padding: 16px !important;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .course-card-container {
+        height: 340px;
     }
     
-    .course-card-back h3 {
-        font-size: 0.85rem !important;
-        margin-bottom: 4px !important;
-    }
-    
-    .course-card-back h4 {
-        font-size: 0.75rem !important;
-        margin-bottom: 4px !important;
-    }
-    
-    .course-card-back li {
-        font-size: 0.65rem !important;
-        margin-bottom: 1px !important;
-    }
-    
-    .course-card-back .grid {
-        gap: 4px !important;
-        margin-bottom: 6px !important;
-    }
-    
-    .course-card-back .grid span,
-    .course-card-back .grid p {
-        font-size: 0.6rem !important;
-    }
-    
-    .course-card-back .enroll-btn {
-        padding: 4px 8px !important;
-        font-size: 0.7rem !important;
+    .course-card-back {
+        padding: 20px !important;
     }
 }
 
 @media (min-width: 1024px) {
     .course-card-container {
-        height: 300px;
+        height: 360px;
     }
     
     .course-card-back {
-        padding: 10px !important;
-    }
-    
-    .course-card-back h3 {
-        font-size: 1rem !important;
-        margin-bottom: 8px !important;
-    }
-    
-    .course-card-back h4 {
-        font-size: 0.85rem !important;
-    }
-    
-    .course-card-back li {
-        font-size: 0.75rem !important;
-        margin-bottom: 3px !important;
-    }
-    
-    .course-card-back .grid span,
-    .course-card-back .grid p {
-        font-size: 0.7rem !important;
-    }
-    
-    .course-card-back .enroll-btn {
-        padding: 8px 14px !important;
-        font-size: 0.8rem !important;
+        padding: 24px !important;
     }
 }
 
