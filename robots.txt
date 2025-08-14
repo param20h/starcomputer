@@ -1,0 +1,64 @@
+# Star Computer Center - Robots.txt
+# Optimized for search engine crawling
+
+User-agent: *
+Allow: /
+
+# Priority pages for crawling
+Allow: /index.html
+Allow: /sitemap.xml
+Allow: /manifest.json
+Allow: /logo.png
+Allow: /images/
+Allow: /certife/
+
+# Stylesheets and scripts (allow for proper rendering)
+Allow: /tailwind-optimized.css
+Allow: /script-optimized.js
+Allow: /sw.js
+
+# Disallow sensitive or unnecessary files
+Disallow: /*.tmp
+Disallow: /*.temp
+Disallow: /*.backup
+Disallow: /*.log
+Disallow: /private/
+Disallow: /test-*
+Disallow: /*-temp.*
+Disallow: /*-backup.*
+
+# Special instructions for different bots
+
+# Google Bot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yandex Bot
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# Social Media Bots (for better sharing)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Sitemap location
+Sitemap: https://starcomputercenter.in/sitemap.xml
+
+# Host directive (if using custom domain)
+Host: starcomputercenter.in
