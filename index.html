@@ -65,7 +65,6 @@
                         'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
                         'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
                         'slide-in-right': 'slideInRight 0.8s ease-out forwards',
-                        'certificate-scroll': 'certificateScroll 30s linear infinite',
                     },
                     keyframes: {
                         float: {
@@ -83,10 +82,6 @@
                         slideInRight: {
                             '0%': { opacity: '0', transform: 'translateX(30px)' },
                             '100%': { opacity: '1', transform: 'translateX(0)' }
-                        },
-                        certificateScroll: {
-                            '0%': { transform: 'translateX(0)' },
-                            '100%': { transform: 'translateX(-50%)' }
                         }
                     }
                 }
@@ -127,6 +122,7 @@
                     <li><a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 text-sm xl:text-base">About</a></li>
                     <li><a href="#certificates" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 text-sm xl:text-base">Certificates</a></li>
                     <li><a href="#gallery" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 text-sm xl:text-base">Gallery</a></li>
+                    <li><a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 text-sm xl:text-base">FAQ</a></li>
                     <li><a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 text-sm xl:text-base">Contact</a></li>
                     <li><a href="https://starcomputercenter.setskill.in/" target="_blank" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 xl:px-6 xl:py-2 rounded-full hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 font-medium text-sm xl:text-base">Login</a></li>
                 </ul>
@@ -145,6 +141,7 @@
                     <a href="#about" class="text-gray-700 hover:text-blue-600 hover:bg-blue-50 font-medium transition-all duration-300 py-3 px-4 rounded-lg">About</a>
                     <a href="#certificates" class="text-gray-700 hover:text-blue-600 hover:bg-blue-50 font-medium transition-all duration-300 py-3 px-4 rounded-lg">Certificates</a>
                     <a href="#gallery" class="text-gray-700 hover:text-blue-600 hover:bg-blue-50 font-medium transition-all duration-300 py-3 px-4 rounded-lg">Gallery</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 hover:bg-blue-50 font-medium transition-all duration-300 py-3 px-4 rounded-lg">FAQ</a>
                     <a href="#contact" class="text-gray-700 hover:text-blue-600 hover:bg-blue-50 font-medium transition-all duration-300 py-3 px-4 rounded-lg">Contact</a>
                     <a href="https://starcomputercenter.setskill.in/" target="_blank" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full text-center hover:from-blue-600 hover:to-purple-700 transition-all duration-300 font-medium mt-2">Login</a>
                 </div>
@@ -189,7 +186,7 @@
                         <span id="typing-text" class="text-cyan-300 font-semibold border-r-2 border-cyan-300 animate-pulse">technology skills</span>
                     </p>
                     <p class="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto">
-                        Join 150+ successful students who transformed their careers with our expert training programs
+                        Join 200+ successful students who transformed their careers with our expert training programs
                     </p>
                 </div>
             </div>
@@ -241,14 +238,14 @@
             <div class="hero-stats grid grid-cols-3 gap-3 sm:gap-6 lg:gap-8 max-w-lg sm:max-w-2xl mx-auto animate-fade-in-up px-4" style="animation-delay: 0.6s;">
                 <div class="stat-item group text-center">
                     <div class="relative">
-                        <div class="stat-number text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300" data-target="150">0</div>
+                        <div class="stat-number text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300" data-target="200">0</div>
                         <div class="absolute inset-0 bg-yellow-400/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div class="stat-label text-xs sm:text-sm md:text-base text-gray-300">Happy Students</div>
                 </div>
                 <div class="stat-item group text-center">
                     <div class="relative">
-                        <div class="stat-number text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300" data-target="50">0</div>
+                        <div class="stat-number text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300" data-target="300">0</div>
                         <div class="absolute inset-0 bg-yellow-400/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div class="stat-label text-xs sm:text-sm md:text-base text-gray-300">Courses Offered</div>
@@ -298,28 +295,28 @@
     <section class="py-12 sm:py-16 lg:py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 text-center">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 text-white text-lg sm:text-xl lg:text-2xl font-bold">
                         01
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-4">Modern Lab</h3>
                     <p class="text-sm sm:text-base text-gray-600 leading-relaxed">State-of-the-art computer lab with latest software</p>
                 </div>
-                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 text-center">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 text-white text-lg sm:text-xl lg:text-2xl font-bold">
                         02
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-4">Expert Faculty</h3>
                     <p class="text-sm sm:text-base text-gray-600 leading-relaxed">Industry professionals with 5+ years experience</p>
                 </div>
-                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 text-center">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 text-white text-lg sm:text-xl lg:text-2xl font-bold">
                         03
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-4">Job Assistance</h3>
                     <p class="text-sm sm:text-base text-gray-600 leading-relaxed">100% placement support and career guidance</p>
                 </div>
-                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
+                <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 text-center">
                     <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 text-white text-lg sm:text-xl lg:text-2xl font-bold">
                         04
                     </div>
@@ -331,73 +328,93 @@
     </section>
 
     <!-- Courses Section -->
-    <section id="courses" class="py-12 sm:py-16 lg:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-4">Our Popular Courses</h2>
-            <div class="w-16 sm:w-20 lg:w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-8 sm:mb-12"></div>
+    <section id="courses" class="py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Our <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Popular Courses</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Transform your career with our industry-leading courses designed for the modern digital world
+                </p>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Course Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="course-filter-btn active px-6 py-3 rounded-full border-2 border-blue-500 bg-blue-500 text-white font-medium transition-all duration-300 hover:scale-105" data-filter="all">
+                    All Courses
+                </button>
+                <button class="course-filter-btn px-6 py-3 rounded-full border-2 border-gray-300 bg-white text-gray-700 font-medium transition-all duration-300 hover:border-blue-500 hover:text-blue-500 hover:scale-105" data-filter="office">
+                    MS Office
+                </button>
+                <button class="course-filter-btn px-6 py-3 rounded-full border-2 border-gray-300 bg-white text-gray-700 font-medium transition-all duration-300 hover:border-blue-500 hover:text-blue-500 hover:scale-105" data-filter="programming">
+                    Programming
+                </button>
+                <button class="course-filter-btn px-6 py-3 rounded-full border-2 border-gray-300 bg-white text-gray-700 font-medium transition-all duration-300 hover:border-blue-500 hover:text-blue-500 hover:scale-105" data-filter="web">
+                    Web Design
+                </button>
+                <button class="course-filter-btn px-6 py-3 rounded-full border-2 border-gray-300 bg-white text-gray-700 font-medium transition-all duration-300 hover:border-blue-500 hover:text-blue-500 hover:scale-105" data-filter="graphics">
+                    Graphics
+                </button>
+            </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 mb-8 sm:mb-12">
+            <!-- Courses Grid -->
+            <div class="courses-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
                 <!-- Microsoft Excel Course -->
-                <div class="course-card-container" data-category="office">
-                    <div class="course-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                        <!-- Front Side -->
-                        <div class="course-card-front">
-                            <div class="p-6 flex flex-col h-full">
-                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                    <i class="fas fa-file-excel text-green-600 text-2xl"></i>
-                                </div>
-                                <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Microsoft Excel</h3>
-                                <p class="text-gray-600 mb-6 text-center flex-grow">Master spreadsheets, formulas, charts, and data analysis</p>
-                                <div class="flex justify-between items-center mb-6 text-sm text-gray-500">
-                                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i> 4 weeks</span>
-                                    <span>All Levels</span>
-                                </div>
-                                <button class="learn-more-btn w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 font-medium">Learn More</button>
+                <div class="modern-course-card group" data-category="office">
+                    <div class="relative bg-white rounded-2xl border-2 border-gray-200 hover:border-green-400 transition-all duration-500 overflow-hidden transform hover:-translate-y-2 hover:scale-105">
+                        <!-- Card Header with Icon -->
+                        <div class="relative p-8 bg-gradient-to-br from-green-50 to-emerald-100">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">Popular</span>
                             </div>
+                            <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform duration-300">
+                                <i class="fas fa-file-excel text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Microsoft Excel</h3>
+                            <p class="text-gray-600 text-sm">Master spreadsheets, formulas, and data analysis</p>
                         </div>
                         
-                        <!-- Back Side -->
-                        <div class="course-card-back">
-                            <div class="flex flex-col h-full">
-                                <div class="flex items-center justify-between mb-4">
-                                    <h3 class="text-xl font-bold text-gray-800">Microsoft Excel</h3>
-                                    <button class="flip-back-btn text-gray-500 hover:text-gray-700 text-xl">
-                                        <i class="fas fa-times"></i>
-                                    </button>
+                        <!-- Card Body -->
+                        <div class="p-8 pt-6">
+                            <!-- Course Features -->
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-clock text-green-500 mr-3"></i>
+                                    <span>4 weeks • 3 hours/day</span>
                                 </div>
-                                
-                                <div class="flex-grow">
-                                    <h4 class="font-bold text-gray-700 mb-3">What You'll Learn:</h4>
-                                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
-                                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i> Excel basics and interface</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i> Formulas and functions</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i> Data analysis and pivot tables</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i> Charts and graphs</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-green-500 mr-2 mt-1"></i> Macros and automation</li>
-                                    </ul>
-                                    
-                                    <div class="grid grid-cols-2 gap-4 text-sm">
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Duration:</span>
-                                            <p class="text-gray-600">4 weeks</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Fee:</span>
-                                            <p class="text-gray-600">₹3,500</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Level:</span>
-                                            <p class="text-gray-600">All Levels</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Certificate:</span>
-                                            <p class="text-gray-600">Yes</p>
-                                        </div>
-                                    </div>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-users text-green-500 mr-3"></i>
+                                    <span>Beginner to Advanced</span>
                                 </div>
-                                
-                                <button class="enroll-btn w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 rounded-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 font-medium mt-4">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-certificate text-green-500 mr-3"></i>
+                                    <span>Industry Certificate</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Pricing -->
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <span class="text-3xl font-bold text-gray-900">₹3,500</span>
+                                    <span class="text-sm text-gray-500 line-through ml-2">₹5,000</span>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-sm text-gray-600">Starting</div>
+                                    <div class="text-sm font-semibold text-green-600">Next Monday</div>
+                                </div>
+                            </div>
+                            
+                            <!-- CTA Buttons -->
+                            <div class="space-y-3">
+                                <button class="w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:from-green-600 hover:to-emerald-700 transform hover:scale-105">
                                     Enroll Now
+                                </button>
+                                <button class="w-full border-2 border-green-500 text-green-600 py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:bg-green-50">
+                                    View Details
                                 </button>
                             </div>
                         </div>
@@ -405,66 +422,57 @@
                 </div>
 
                 <!-- Programming Basics Course -->
-                <div class="course-card-container" data-category="programming">
-                    <div class="course-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                        <!-- Front Side -->
-                        <div class="course-card-front">
-                            <div class="p-6 flex flex-col h-full">
-                                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                    <i class="fas fa-code text-blue-600 text-2xl"></i>
-                                </div>
-                                <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Programming Basics</h3>
-                                <p class="text-gray-600 mb-6 text-center flex-grow">Learn programming fundamentals with Python and JavaScript</p>
-                                <div class="flex justify-between items-center mb-6 text-sm text-gray-500">
-                                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i> 8 weeks</span>
-                                    <span>Beginner</span>
-                                </div>
-                                <button class="learn-more-btn w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 font-medium">Learn More</button>
+                <div class="modern-course-card group" data-category="programming">
+                    <div class="relative bg-white rounded-2xl border-2 border-gray-200 hover:border-blue-400 transition-all duration-500 overflow-hidden transform hover:-translate-y-2 hover:scale-105">
+                        <!-- Card Header with Icon -->
+                        <div class="relative p-8 bg-gradient-to-br from-blue-50 to-indigo-100">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full">Trending</span>
                             </div>
+                            <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform duration-300">
+                                <i class="fas fa-code text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Programming Basics</h3>
+                            <p class="text-gray-600 text-sm">Learn Python, JavaScript fundamentals</p>
                         </div>
                         
-                        <!-- Back Side -->
-                        <div class="course-card-back">
-                            <div class="flex flex-col h-full">
-                                <div class="flex items-center justify-between mb-4">
-                                    <h3 class="text-xl font-bold text-gray-800">Programming Basics</h3>
-                                    <button class="flip-back-btn text-gray-500 hover:text-gray-700 text-xl">
-                                        <i class="fas fa-times"></i>
-                                    </button>
+                        <!-- Card Body -->
+                        <div class="p-8 pt-6">
+                            <!-- Course Features -->
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-clock text-blue-500 mr-3"></i>
+                                    <span>8 weeks • 2 hours/day</span>
                                 </div>
-                                
-                                <div class="flex-grow">
-                                    <h4 class="font-bold text-gray-700 mb-3">What You'll Learn:</h4>
-                                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
-                                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-2 mt-1"></i> Programming fundamentals</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-2 mt-1"></i> Python basics and syntax</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-2 mt-1"></i> JavaScript for web development</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-2 mt-1"></i> Problem-solving techniques</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-2 mt-1"></i> Basic projects and exercises</li>
-                                    </ul>
-                                    
-                                    <div class="grid grid-cols-2 gap-4 text-sm">
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Duration:</span>
-                                            <p class="text-gray-600">8 weeks</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Fee:</span>
-                                            <p class="text-gray-600">₹5,500</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Level:</span>
-                                            <p class="text-gray-600">Beginner</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Certificate:</span>
-                                            <p class="text-gray-600">Yes</p>
-                                        </div>
-                                    </div>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-users text-blue-500 mr-3"></i>
+                                    <span>Complete Beginner</span>
                                 </div>
-                                
-                                <button class="enroll-btn w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 font-medium mt-4">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-certificate text-blue-500 mr-3"></i>
+                                    <span>Programming Certificate</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Pricing -->
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <span class="text-3xl font-bold text-gray-900">₹5,500</span>
+                                    <span class="text-sm text-gray-500 line-through ml-2">₹8,000</span>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-sm text-gray-600">Starting</div>
+                                    <div class="text-sm font-semibold text-blue-600">This Monday</div>
+                                </div>
+                            </div>
+                            
+                            <!-- CTA Buttons -->
+                            <div class="space-y-3">
+                                <button class="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:from-blue-600 hover:to-indigo-700 transform hover:scale-105">
                                     Enroll Now
+                                </button>
+                                <button class="w-full border-2 border-blue-500 text-blue-600 py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:bg-blue-50">
+                                    View Details
                                 </button>
                             </div>
                         </div>
@@ -472,66 +480,57 @@
                 </div>
 
                 <!-- Web Design Course -->
-                <div class="course-card-container" data-category="web">
-                    <div class="course-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                        <!-- Front Side -->
-                        <div class="course-card-front">
-                            <div class="p-6 flex flex-col h-full">
-                                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                    <i class="fas fa-palette text-purple-600 text-2xl"></i>
-                                </div>
-                                <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Web Design</h3>
-                                <p class="text-gray-600 mb-6 text-center flex-grow">Create stunning websites with HTML, CSS, and responsive design</p>
-                                <div class="flex justify-between items-center mb-6 text-sm text-gray-500">
-                                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i> 6 weeks</span>
-                                    <span>Beginner+</span>
-                                </div>
-                                <button class="learn-more-btn w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white py-3 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 font-medium">Learn More</button>
+                <div class="modern-course-card group" data-category="web">
+                    <div class="relative bg-white rounded-2xl border-2 border-gray-200 hover:border-purple-400 transition-all duration-500 overflow-hidden transform hover:-translate-y-2 hover:scale-105">
+                        <!-- Card Header with Icon -->
+                        <div class="relative p-8 bg-gradient-to-br from-purple-50 to-pink-100">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">Hot</span>
                             </div>
+                            <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform duration-300">
+                                <i class="fas fa-palette text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Web Design</h3>
+                            <p class="text-gray-600 text-sm">HTML, CSS, responsive design mastery</p>
                         </div>
                         
-                        <!-- Back Side -->
-                        <div class="course-card-back">
-                            <div class="flex flex-col h-full">
-                                <div class="flex items-center justify-between mb-4">
-                                    <h3 class="text-xl font-bold text-gray-800">Web Design</h3>
-                                    <button class="flip-back-btn text-gray-500 hover:text-gray-700 text-xl">
-                                        <i class="fas fa-times"></i>
-                                    </button>
+                        <!-- Card Body -->
+                        <div class="p-8 pt-6">
+                            <!-- Course Features -->
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-clock text-purple-500 mr-3"></i>
+                                    <span>6 weeks • 3 hours/day</span>
                                 </div>
-                                
-                                <div class="flex-grow">
-                                    <h4 class="font-bold text-gray-700 mb-3">What You'll Learn:</h4>
-                                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
-                                        <li class="flex items-start"><i class="fas fa-check text-purple-500 mr-2 mt-1"></i> HTML5 and semantic markup</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-purple-500 mr-2 mt-1"></i> CSS3 and modern styling</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-purple-500 mr-2 mt-1"></i> Responsive web design</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-purple-500 mr-2 mt-1"></i> Bootstrap framework</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-purple-500 mr-2 mt-1"></i> Website deployment</li>
-                                    </ul>
-                                    
-                                    <div class="grid grid-cols-2 gap-4 text-sm">
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Duration:</span>
-                                            <p class="text-gray-600">6 weeks</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Fee:</span>
-                                            <p class="text-gray-600">₹4,500</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Level:</span>
-                                            <p class="text-gray-600">Beginner+</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Certificate:</span>
-                                            <p class="text-gray-600">Yes</p>
-                                        </div>
-                                    </div>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-users text-purple-500 mr-3"></i>
+                                    <span>Beginner+</span>
                                 </div>
-                                
-                                <button class="enroll-btn w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white py-3 rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all duration-300 font-medium mt-4">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-certificate text-purple-500 mr-3"></i>
+                                    <span>Web Design Certificate</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Pricing -->
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <span class="text-3xl font-bold text-gray-900">₹4,500</span>
+                                    <span class="text-sm text-gray-500 line-through ml-2">₹6,500</span>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-sm text-gray-600">Starting</div>
+                                    <div class="text-sm font-semibold text-purple-600">Next Week</div>
+                                </div>
+                            </div>
+                            
+                            <!-- CTA Buttons -->
+                            <div class="space-y-3">
+                                <button class="w-full bg-gradient-to-r from-purple-500 to-pink-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:from-purple-600 hover:to-pink-700 transform hover:scale-105">
                                     Enroll Now
+                                </button>
+                                <button class="w-full border-2 border-purple-500 text-purple-600 py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:bg-purple-50">
+                                    View Details
                                 </button>
                             </div>
                         </div>
@@ -539,214 +538,199 @@
                 </div>
 
                 <!-- Computer Basics Course -->
-                <div class="course-card-container" data-category="basics">
-                    <div class="course-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                        <!-- Front Side -->
-                        <div class="course-card-front">
-                            <div class="p-6 flex flex-col h-full">
-                                <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                    <i class="fas fa-desktop text-gray-600 text-2xl"></i>
-                                </div>
-                                <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Computer Basics</h3>
-                                <p class="text-gray-600 mb-6 text-center flex-grow">Essential computer skills, Windows, internet, and email</p>
-                                <div class="flex justify-between items-center mb-6 text-sm text-gray-500">
-                                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i> 3 weeks</span>
-                                    <span>Beginner</span>
-                                </div>
-                                <button class="learn-more-btn w-full bg-gradient-to-r from-gray-500 to-gray-600 text-white py-3 rounded-lg hover:from-gray-600 hover:to-gray-700 transition-all duration-300 font-medium">Learn More</button>
+                <div class="modern-course-card group" data-category="office">
+                    <div class="relative bg-white rounded-2xl border-2 border-gray-200 hover:border-orange-400 transition-all duration-500 overflow-hidden transform hover:-translate-y-2 hover:scale-105">
+                        <!-- Card Header with Icon -->
+                        <div class="relative p-8 bg-gradient-to-br from-orange-50 to-yellow-100">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full">Essential</span>
                             </div>
+                            <div class="w-20 h-20 bg-gradient-to-br from-orange-400 to-yellow-500 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform duration-300">
+                                <i class="fas fa-desktop text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Computer Basics</h3>
+                            <p class="text-gray-600 text-sm">Windows, Word, PowerPoint fundamentals</p>
                         </div>
                         
-                        <!-- Back Side -->
-                        <div class="course-card-back">
-                            <div class="flex flex-col h-full">
-                                <div class="flex items-center justify-between mb-4">
-                                    <h3 class="text-xl font-bold text-gray-800">Computer Basics</h3>
-                                    <button class="flip-back-btn text-gray-500 hover:text-gray-700 text-xl">
-                                        <i class="fas fa-times"></i>
-                                    </button>
+                        <!-- Card Body -->
+                        <div class="p-8 pt-6">
+                            <!-- Course Features -->
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-clock text-orange-500 mr-3"></i>
+                                    <span>3 weeks • 2 hours/day</span>
                                 </div>
-                                
-                                <div class="flex-grow">
-                                    <h4 class="font-bold text-gray-700 mb-3">What You'll Learn:</h4>
-                                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
-                                        <li class="flex items-start"><i class="fas fa-check text-gray-500 mr-2 mt-1"></i> Computer hardware basics</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-gray-500 mr-2 mt-1"></i> Windows operating system</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-gray-500 mr-2 mt-1"></i> File management</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-gray-500 mr-2 mt-1"></i> Internet browsing and email</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-gray-500 mr-2 mt-1"></i> Basic troubleshooting</li>
-                                    </ul>
-                                    
-                                    <div class="grid grid-cols-2 gap-4 text-sm">
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Duration:</span>
-                                            <p class="text-gray-600">3 weeks</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Fee:</span>
-                                            <p class="text-gray-600">₹2,500</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Level:</span>
-                                            <p class="text-gray-600">Beginner</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Certificate:</span>
-                                            <p class="text-gray-600">Yes</p>
-                                        </div>
-                                    </div>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-users text-orange-500 mr-3"></i>
+                                    <span>Absolute Beginner</span>
                                 </div>
-                                
-                                <button class="enroll-btn w-full bg-gradient-to-r from-gray-500 to-gray-600 text-white py-3 rounded-lg hover:from-gray-600 hover:to-gray-700 transition-all duration-300 font-medium mt-4">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-certificate text-orange-500 mr-3"></i>
+                                    <span>Basic Computer Certificate</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Pricing -->
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <span class="text-3xl font-bold text-gray-900">₹2,500</span>
+                                    <span class="text-sm text-gray-500 line-through ml-2">₹3,500</span>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-sm text-gray-600">Starting</div>
+                                    <div class="text-sm font-semibold text-orange-600">Tomorrow</div>
+                                </div>
+                            </div>
+                            
+                            <!-- CTA Buttons -->
+                            <div class="space-y-3">
+                                <button class="w-full bg-gradient-to-r from-orange-500 to-yellow-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:from-orange-600 hover:to-yellow-700 transform hover:scale-105">
                                     Enroll Now
+                                </button>
+                                <button class="w-full border-2 border-orange-500 text-orange-600 py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:bg-orange-50">
+                                    View Details
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Microsoft Office Suite Course -->
-                <div class="course-card-container" data-category="office">
-                    <div class="course-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                        <!-- Front Side -->
-                        <div class="course-card-front">
-                            <div class="p-6 flex flex-col h-full">
-                                <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                    <i class="fas fa-file-word text-indigo-600 text-2xl"></i>
-                                </div>
-                                <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Microsoft Office Suite</h3>
-                                <p class="text-gray-600 mb-6 text-center flex-grow">Word, PowerPoint, Excel - Complete office productivity</p>
-                                <div class="flex justify-between items-center mb-6 text-sm text-gray-500">
-                                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i> 6 weeks</span>
-                                    <span>All Levels</span>
-                                </div>
-                                <button class="learn-more-btn w-full bg-gradient-to-r from-indigo-500 to-indigo-600 text-white py-3 rounded-lg hover:from-indigo-600 hover:to-indigo-700 transition-all duration-300 font-medium">Learn More</button>
+                <!-- Graphic Design Course -->
+                <div class="modern-course-card group" data-category="graphics">
+                    <div class="relative bg-white rounded-2xl border-2 border-gray-200 hover:border-pink-400 transition-all duration-500 overflow-hidden transform hover:-translate-y-2 hover:scale-105">
+                        <!-- Card Header with Icon -->
+                        <div class="relative p-8 bg-gradient-to-br from-pink-50 to-rose-100">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-pink-100 text-pink-700 text-xs font-semibold px-3 py-1 rounded-full">Creative</span>
                             </div>
+                            <div class="w-20 h-20 bg-gradient-to-br from-pink-400 to-rose-500 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform duration-300">
+                                <i class="fas fa-paint-brush text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Graphic Design</h3>
+                            <p class="text-gray-600 text-sm">Photoshop, Illustrator, design principles</p>
                         </div>
                         
-                        <!-- Back Side -->
-                        <div class="course-card-back">
-                            <div class="flex flex-col h-full">
-                                <div class="flex items-center justify-between mb-4">
-                                    <h3 class="text-xl font-bold text-gray-800">Office Suite</h3>
-                                    <button class="flip-back-btn text-gray-500 hover:text-gray-700 text-xl">
-                                        <i class="fas fa-times"></i>
-                                    </button>
+                        <!-- Card Body -->
+                        <div class="p-8 pt-6">
+                            <!-- Course Features -->
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-clock text-pink-500 mr-3"></i>
+                                    <span>10 weeks • 3 hours/day</span>
                                 </div>
-                                
-                                <div class="flex-grow">
-                                    <h4 class="font-bold text-gray-700 mb-3">What You'll Learn:</h4>
-                                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
-                                        <li class="flex items-start"><i class="fas fa-check text-indigo-500 mr-2 mt-1"></i> Microsoft Word advanced features</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-indigo-500 mr-2 mt-1"></i> PowerPoint presentations</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-indigo-500 mr-2 mt-1"></i> Excel spreadsheets</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-indigo-500 mr-2 mt-1"></i> Outlook email management</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-indigo-500 mr-2 mt-1"></i> Office integration</li>
-                                    </ul>
-                                    
-                                    <div class="grid grid-cols-2 gap-4 text-sm">
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Duration:</span>
-                                            <p class="text-gray-600">6 weeks</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Fee:</span>
-                                            <p class="text-gray-600">₹4,000</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Level:</span>
-                                            <p class="text-gray-600">All Levels</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Certificate:</span>
-                                            <p class="text-gray-600">Yes</p>
-                                        </div>
-                                    </div>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-users text-pink-500 mr-3"></i>
+                                    <span>Beginner to Intermediate</span>
                                 </div>
-                                
-                                <button class="enroll-btn w-full bg-gradient-to-r from-indigo-500 to-indigo-600 text-white py-3 rounded-lg hover:from-indigo-600 hover:to-indigo-700 transition-all duration-300 font-medium mt-4">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-certificate text-pink-500 mr-3"></i>
+                                    <span>Adobe Certified</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Pricing -->
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <span class="text-3xl font-bold text-gray-900">₹7,500</span>
+                                    <span class="text-sm text-gray-500 line-through ml-2">₹10,000</span>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-sm text-gray-600">Starting</div>
+                                    <div class="text-sm font-semibold text-pink-600">Next Month</div>
+                                </div>
+                            </div>
+                            
+                            <!-- CTA Buttons -->
+                            <div class="space-y-3">
+                                <button class="w-full bg-gradient-to-r from-pink-500 to-rose-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:from-pink-600 hover:to-rose-700 transform hover:scale-105">
                                     Enroll Now
+                                </button>
+                                <button class="w-full border-2 border-pink-500 text-pink-600 py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:bg-pink-50">
+                                    View Details
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Python Programming Course -->
-                <div class="course-card-container" data-category="programming">
-                    <div class="course-card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-                        <!-- Front Side -->
-                        <div class="course-card-front">
-                            <div class="p-6 flex flex-col h-full">
-                                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                                    <i class="fab fa-python text-yellow-600 text-2xl"></i>
+                <!-- Digital Marketing Course -->
+                <div class="modern-course-card group" data-category="web">
+                    <div class="relative bg-white rounded-2xl border-2 border-gray-200 hover:border-teal-400 transition-all duration-500 overflow-hidden transform hover:-translate-y-2 hover:scale-105">
+                        <!-- Card Header with Icon -->
+                        <div class="relative p-8 bg-gradient-to-br from-teal-50 to-cyan-100">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-teal-100 text-teal-700 text-xs font-semibold px-3 py-1 rounded-full">In-Demand</span>
+                            </div>
+                            <div class="w-20 h-20 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-6 transition-transform duration-300">
+                                <i class="fas fa-bullhorn text-white text-3xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Digital Marketing</h3>
+                            <p class="text-gray-600 text-sm">SEO, Social Media, Google Ads mastery</p>
+                        </div>
+                        
+                        <!-- Card Body -->
+                        <div class="p-8 pt-6">
+                            <!-- Course Features -->
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-clock text-teal-500 mr-3"></i>
+                                    <span>8 weeks • 2.5 hours/day</span>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Python Programming</h3>
-                                <p class="text-gray-600 mb-6 text-center flex-grow">Learn Python programming from basics to advanced concepts</p>
-                                <div class="flex justify-between items-center mb-6 text-sm text-gray-500">
-                                    <span class="flex items-center"><i class="fas fa-clock mr-2"></i> 6 weeks</span>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-users text-teal-500 mr-3"></i>
                                     <span>Beginner to Advanced</span>
                                 </div>
-                                <button class="learn-more-btn w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white py-3 rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all duration-300 font-medium">Learn More</button>
+                                <div class="flex items-center text-sm text-gray-600">
+                                    <i class="fas fa-certificate text-teal-500 mr-3"></i>
+                                    <span>Google Certified</span>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <!-- Back Side -->
-                        <div class="course-card-back">
-                            <div class="flex flex-col h-full">
-                                <div class="flex items-center justify-between mb-4">
-                                    <h3 class="text-xl font-bold text-gray-800">Python Programming</h3>
-                                    <button class="flip-back-btn text-gray-500 hover:text-gray-700 text-xl">
-                                        <i class="fas fa-times"></i>
-                                    </button>
+                            
+                            <!-- Pricing -->
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <span class="text-3xl font-bold text-gray-900">₹6,500</span>
+                                    <span class="text-sm text-gray-500 line-through ml-2">₹9,000</span>
                                 </div>
-                                
-                                <div class="flex-grow">
-                                    <h4 class="font-bold text-gray-700 mb-3">What You'll Learn:</h4>
-                                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
-                                        <li class="flex items-start"><i class="fas fa-check text-yellow-600 mr-2 mt-1"></i> Python syntax and basics</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-yellow-600 mr-2 mt-1"></i> Data structures and algorithms</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-yellow-600 mr-2 mt-1"></i> Object-oriented programming</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-yellow-600 mr-2 mt-1"></i> File handling and databases</li>
-                                        <li class="flex items-start"><i class="fas fa-check text-yellow-600 mr-2 mt-1"></i> Real-world projects</li>
-                                    </ul>
-                                    
-                                    <div class="grid grid-cols-2 gap-4 text-sm">
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Duration:</span>
-                                            <p class="text-gray-600">6 weeks</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Fee:</span>
-                                            <p class="text-gray-600">₹6,000</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Level:</span>
-                                            <p class="text-gray-600">All Levels</p>
-                                        </div>
-                                        <div>
-                                            <span class="font-semibold text-gray-700">Certificate:</span>
-                                            <p class="text-gray-600">Yes</p>
-                                        </div>
-                                    </div>
+                                <div class="text-right">
+                                    <div class="text-sm text-gray-600">Starting</div>
+                                    <div class="text-sm font-semibold text-teal-600">15th Aug</div>
                                 </div>
-                                
-                                <button class="enroll-btn w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white py-3 rounded-lg hover:from-yellow-600 hover:to-yellow-700 transition-all duration-300 font-medium mt-4">
+                            </div>
+                            
+                            <!-- CTA Buttons -->
+                            <div class="space-y-3">
+                                <button class="w-full bg-gradient-to-r from-teal-500 to-cyan-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:from-teal-600 hover:to-cyan-700 transform hover:scale-105">
                                     Enroll Now
+                                </button>
+                                <button class="w-full border-2 border-teal-500 text-teal-600 py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:bg-teal-50">
+                                    View Details
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <!-- Course Filter -->
-            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 lg:gap-4 px-4">
-                <button class="filter-btn px-3 py-2 sm:px-4 sm:py-2.5 lg:px-6 lg:py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 font-medium text-xs sm:text-sm lg:text-base active" data-filter="all">All Courses</button>
-                <button class="filter-btn px-3 py-2 sm:px-4 sm:py-2.5 lg:px-6 lg:py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-all duration-300 font-medium text-xs sm:text-sm lg:text-base" data-filter="basics">Basics</button>
-                <button class="filter-btn px-3 py-2 sm:px-4 sm:py-2.5 lg:px-6 lg:py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-all duration-300 font-medium text-xs sm:text-sm lg:text-base" data-filter="office">Office</button>
-                <button class="filter-btn px-3 py-2 sm:px-4 sm:py-2.5 lg:px-6 lg:py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-all duration-300 font-medium text-xs sm:text-sm lg:text-base" data-filter="programming">Programming</button>
-                <button class="filter-btn px-3 py-2 sm:px-4 sm:py-2.5 lg:px-6 lg:py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-all duration-300 font-medium text-xs sm:text-sm lg:text-base" data-filter="web">Web Design</button>
+            <!-- Call to Action -->
+            <div class="text-center mt-16">
+                <div class="bg-white rounded-2xl border-2 border-gray-200 p-8 max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                        Can't find the right course?
+                    </h3>
+                    <p class="text-gray-600 mb-6">
+                        We offer customized training programs to meet your specific needs and career goals.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-8 rounded-xl font-semibold transition-all duration-300 hover:from-blue-600 hover:to-purple-700 transform hover:scale-105">
+                            Contact for Custom Training
+                        </button>
+                        <button class="border-2 border-blue-500 text-blue-600 py-3 px-8 rounded-xl font-semibold transition-all duration-300 hover:bg-blue-50">
+                            Download Brochure
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -832,7 +816,7 @@
             <div class="relative max-w-4xl mx-auto">
                 <!-- Testimonial Cards -->
                 <div class="testimonial-slider">
-                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl mb-6">
+                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl active">
                         <div class="text-center">
                             <div class="flex justify-center mb-6">
                                 <i class="fas fa-star text-yellow-400 text-xl"></i>
@@ -851,7 +835,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl mb-6">
+                    
+                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl hidden">
                         <div class="text-center">
                             <div class="flex justify-center mb-6">
                                 <i class="fas fa-star text-yellow-400 text-xl"></i>
@@ -870,7 +855,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl mb-6">
+                    
+                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl hidden">
                         <div class="text-center">
                             <div class="flex justify-center mb-6">
                                 <i class="fas fa-star text-yellow-400 text-xl"></i>
@@ -889,9 +875,56 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl hidden">
+                        <div class="text-center">
+                            <div class="flex justify-center mb-6">
+                                <i class="fas fa-star text-yellow-400 text-xl"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl mx-1"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl mx-1"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl"></i>
+                            </div>
+                            <p class="text-lg text-gray-600 italic mb-8 leading-relaxed">"Amazing Python course! Started as a complete beginner and now I'm confident in programming. The practical approach really helps."</p>
+                            <div class="flex items-center justify-center">
+                                <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">S</div>
+                                <div class="text-left">
+                                    <h4 class="font-bold text-gray-800 text-lg">Simran Kaur</h4>
+                                    <span class="text-gray-600">Python Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card bg-white p-8 rounded-2xl shadow-xl hidden">
+                        <div class="text-center">
+                            <div class="flex justify-center mb-6">
+                                <i class="fas fa-star text-yellow-400 text-xl"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl mx-1"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl mx-1"></i>
+                                <i class="fas fa-star text-yellow-400 text-xl"></i>
+                            </div>
+                            <p class="text-lg text-gray-600 italic mb-8 leading-relaxed">"Perfect for learning computer basics. Teachers are patient and the environment is very friendly. Highly recommend for beginners!"</p>
+                            <div class="flex items-center justify-center">
+                                <div class="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4">M</div>
+                                <div class="text-left">
+                                    <h4 class="font-bold text-gray-800 text-lg">Manpreet Singh</h4>
+                                    <span class="text-gray-600">Office Executive</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <!-- No navigation needed for static testimonials -->
+                <!-- Navigation Dots -->
+                <div class="flex justify-center mt-8 space-x-3">
+                    <button class="w-3 h-3 rounded-full bg-purple-600 transition-all duration-300 dot active" onclick="currentSlide(1)"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-purple-400 transition-all duration-300 dot" onclick="currentSlide(2)"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-purple-400 transition-all duration-300 dot" onclick="currentSlide(3)"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-purple-400 transition-all duration-300 dot" onclick="currentSlide(4)"></button>
+                    <button class="w-3 h-3 rounded-full bg-gray-300 hover:bg-purple-400 transition-all duration-300 dot" onclick="currentSlide(5)"></button>
+                </div>
             </div>
         </div>
     </section>
@@ -906,10 +939,11 @@
             <!-- Image Carousel -->
             <div class="relative max-w-4xl mx-auto">
                 <!-- Main Image Container -->
-                <div class="relative overflow-hidden rounded-2xl shadow-2xl bg-gray-100">
+                <div class="gallery-main-container relative overflow-hidden rounded-2xl bg-gray-100 border-2 border-gray-200">
                     <img id="gallery-main-image" 
                          src="images/IMG-20250813-WA0025.jpg" 
                          alt="Learning Environment" 
+                         loading="lazy"
                          class="w-full h-96 md:h-[500px] object-cover transition-all duration-500 cursor-pointer hover:scale-105"
                          onclick="openImageModal()">
                     
@@ -922,12 +956,12 @@
                     
                     <!-- Navigation Arrows -->
                     <button onclick="previousImage()" 
-                            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
+                            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center transition-all duration-300 hover:scale-110">
                         <i class="fas fa-chevron-left text-xl"></i>
                     </button>
                     
                     <button onclick="nextImage()" 
-                            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110">
+                            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center transition-all duration-300 hover:scale-110">
                         <i class="fas fa-chevron-right text-xl"></i>
                     </button>
                     
@@ -940,7 +974,7 @@
                 <!-- Thumbnail Navigation -->
                 <div class="flex justify-center mt-6 space-x-2 overflow-x-auto pb-2">
                     <button onclick="showImage(0)" class="thumbnail-btn flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 border-blue-500 transition-all duration-300">
-                        <img src="images/IMG-20250813-WA0025.jpg" alt="Thumbnail" class="w-full h-full object-cover">
+                        <img src="images/IMG-20250813-WA0025.jpg" alt="Thumbnail" loading="lazy" class="w-full h-full object-cover">
                     </button>
                     <button onclick="showImage(1)" class="thumbnail-btn flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 border-transparent hover:border-blue-300 transition-all duration-300">
                         <img src="images/IMG-20250813-WA0026.jpg" alt="Thumbnail" class="w-full h-full object-cover">
@@ -993,7 +1027,7 @@
                     <div class="certificates-track flex gap-6">
                         <!-- Certificate items with actual images -->
                         <div class="certificate-item flex-shrink-0 w-80">
-                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center border border-gray-200 group cursor-pointer" onclick="openCertificateModal('certife/STAR COMPUTER CENTER.png')">
+                            <div class="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 text-center border border-gray-200 group cursor-pointer" onclick="openCertificateModal('certife/STAR COMPUTER CENTER.png')">
                                 <div class="mb-4 overflow-hidden rounded-lg">
                                     <img src="certife/STAR COMPUTER CENTER.png" 
                                          alt="Star Computer Center Official Certificate" 
@@ -1006,7 +1040,7 @@
                         </div>
                         
                         <div class="certificate-item flex-shrink-0 w-80">
-                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center border border-gray-200 group cursor-pointer" onclick="openCertificateModal('certife/IMG-20250813-WA0024.jpg')">
+                            <div class="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 text-center border border-gray-200 group cursor-pointer" onclick="openCertificateModal('certife/IMG-20250813-WA0024.jpg')">
                                 <div class="mb-4 overflow-hidden rounded-lg">
                                     <img src="certife/IMG-20250813-WA0024.jpg" 
                                          alt="Professional Certification" 
@@ -1019,7 +1053,7 @@
                         </div>
                         
                         <div class="certificate-item flex-shrink-0 w-80">
-                            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center border border-gray-200 group cursor-pointer" onclick="openCertificateModal('certife/WhatsApp Image 2025-08-13 at 08.43.01_9f4a2de1.jpg')">
+                            <div class="bg-white p-6 rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 text-center border border-gray-200 group cursor-pointer" onclick="openCertificateModal('certife/WhatsApp Image 2025-08-13 at 08.43.01_9f4a2de1.jpg')">
                                 <div class="mb-4 overflow-hidden rounded-lg">
                                     <img src="certife/WhatsApp Image 2025-08-13 at 08.43.01_9f4a2de1.jpg" 
                                          alt="Training Center Authorization" 
@@ -1088,12 +1122,12 @@
                 <!-- Stats -->
                 <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-8">
                     <div class="bg-white p-8 rounded-2xl shadow-lg text-center group hover:shadow-xl transition-all duration-300">
-                        <div class="text-4xl lg:text-5xl font-bold text-blue-600 mb-2 group-hover:scale-110 transition-transform duration-300" data-target="150">0</div>
+                        <div class="text-4xl lg:text-5xl font-bold text-blue-600 mb-2 group-hover:scale-110 transition-transform duration-300" data-target="200">0</div>
                         <div class="text-gray-600 font-semibold">Students Trained</div>
                     </div>
                     
                     <div class="bg-white p-8 rounded-2xl shadow-lg text-center group hover:shadow-xl transition-all duration-300">
-                        <div class="text-4xl lg:text-5xl font-bold text-green-600 mb-2 group-hover:scale-110 transition-transform duration-300" data-target="50">0</div>
+                        <div class="text-4xl lg:text-5xl font-bold text-green-600 mb-2 group-hover:scale-110 transition-transform duration-300" data-target="300">0</div>
                         <div class="text-gray-600 font-semibold">Courses Offered</div>
                     </div>
                     
@@ -1126,12 +1160,12 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-16 lg:py-24 bg-white">
+    <section id="faq" class="py-16 lg:py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-16">Frequently Asked Questions</h2>
             
             <div class="space-y-6">
-                <div class="faq-item bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="faq-item bg-gray-50 rounded-xl overflow-hidden border-2 border-gray-200 hover:border-gray-300 transition-all duration-300">
                     <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-100 transition-colors duration-300">
                         <h3 class="text-lg font-semibold text-gray-800">What are the course timings?</h3>
                         <i class="fas fa-chevron-down text-gray-600 transform transition-transform duration-300"></i>
@@ -1141,7 +1175,7 @@
                     </div>
                 </div>
                 
-                <div class="faq-item bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="faq-item bg-gray-50 rounded-xl overflow-hidden border-2 border-gray-200 hover:border-gray-300 transition-all duration-300">
                     <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-100 transition-colors duration-300">
                         <h3 class="text-lg font-semibold text-gray-800">Do you provide certificates?</h3>
                         <i class="fas fa-chevron-down text-gray-600 transform transition-transform duration-300"></i>
@@ -1151,7 +1185,7 @@
                     </div>
                 </div>
                 
-                <div class="faq-item bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="faq-item bg-gray-50 rounded-xl overflow-hidden border-2 border-gray-200 hover:border-gray-300 transition-all duration-300">
                     <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-100 transition-colors duration-300">
                         <h3 class="text-lg font-semibold text-gray-800">Is there any age limit for courses?</h3>
                         <i class="fas fa-chevron-down text-gray-600 transform transition-transform duration-300"></i>
@@ -1161,7 +1195,7 @@
                     </div>
                 </div>
                 
-                <div class="faq-item bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="faq-item bg-gray-50 rounded-xl overflow-hidden border-2 border-gray-200 hover:border-gray-300 transition-all duration-300">
                     <button class="faq-question w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-100 transition-colors duration-300">
                         <h3 class="text-lg font-semibold text-gray-800">Do you provide job placement assistance?</h3>
                         <i class="fas fa-chevron-down text-gray-600 transform transition-transform duration-300"></i>
@@ -1445,7 +1479,7 @@
     <div id="imageModal" class="fixed inset-0 z-50 hidden">
         <div class="absolute inset-0 bg-black bg-opacity-90 flex items-center justify-center p-4" onclick="closeImageModal()">
             <div class="relative max-w-6xl max-h-full" onclick="event.stopPropagation()">
-                <img id="modalGalleryImage" src="" alt="Learning Environment" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl">
+                <img id="modalGalleryImage" src="" alt="Learning Environment" class="max-w-full max-h-full object-contain rounded-lg border-2 border-gray-300">
                 <button onclick="closeImageModal()" class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-opacity-75 transition-all">
                     <i class="fas fa-times text-lg"></i>
                 </button>
@@ -1466,8 +1500,23 @@
 
     <!-- Scripts - Load in correct order -->
     <script src="email-config.js"></script>
-    <script src="email-handler.js"></script>
+    <script src="email-handler-fixed.js"></script>
     <script src="script-optimized.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        // Register Service Worker for offline functionality
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('✅ ServiceWorker registration successful with scope: ', registration.scope);
+                    }, function(error) {
+                        console.log('❌ ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+    </script>
 
     <!-- Performance and Analytics -->
     <script>
@@ -1489,8 +1538,163 @@
             });
         }
     </script>
-    
-    <!-- Optimized Scripts -->
-    <script src="script-optimized.js"></script>
+
+    <!-- Course Details Modal -->
+    <div id="courseModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between p-6 border-b border-gray-200">
+                <h2 id="modalCourseTitle" class="text-2xl font-bold text-gray-900">Course Details</h2>
+                <button onclick="closeCourseModal()" class="text-gray-400 hover:text-gray-600 text-2xl font-bold">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="p-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Left Column - Course Info -->
+                    <div>
+                        <div class="mb-6">
+                            <div id="modalCourseIcon" class="w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center mb-4">
+                                <i class="fas fa-code text-white text-3xl"></i>
+                            </div>
+                            <h3 id="modalCourseSubtitle" class="text-lg text-gray-600 mb-4">Course Subtitle</h3>
+                        </div>
+                        
+                        <!-- Course Features -->
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center text-gray-700">
+                                <i class="fas fa-clock text-blue-500 mr-3"></i>
+                                <span id="modalCourseDuration">Duration info</span>
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <i class="fas fa-users text-blue-500 mr-3"></i>
+                                <span id="modalCourseLevel">Level info</span>
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <i class="fas fa-certificate text-blue-500 mr-3"></i>
+                                <span>Industry Certificate Included</span>
+                            </div>
+                            <div class="flex items-center text-gray-700">
+                                <i class="fas fa-calendar text-blue-500 mr-3"></i>
+                                <span id="modalCourseStart">Starting date</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Pricing -->
+                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl mb-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <span id="modalCoursePrice" class="text-3xl font-bold text-gray-900">₹3,500</span>
+                                    <span id="modalCourseOriginalPrice" class="text-lg text-gray-500 line-through ml-2">₹5,000</span>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-sm text-green-600 font-semibold">30% OFF</div>
+                                    <div class="text-sm text-gray-600">Limited Time</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column - Curriculum -->
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">What You'll Learn</h4>
+                        <div id="modalCourseCurriculum" class="space-y-3 mb-6">
+                            <!-- Curriculum items will be populated by JavaScript -->
+                        </div>
+                        
+                        <!-- Prerequisites -->
+                        <div class="bg-gray-50 p-4 rounded-xl mb-6">
+                            <h5 class="font-semibold text-gray-900 mb-2">Prerequisites</h5>
+                            <p id="modalCoursePrerequisites" class="text-gray-600 text-sm">Basic computer knowledge recommended</p>
+                        </div>
+                        
+                        <!-- Instructor Info -->
+                        <div class="border-t pt-6">
+                            <h5 class="font-semibold text-gray-900 mb-3">Instructor</h5>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-4">
+                                    SC
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-gray-900">Star Computer Center</div>
+                                    <div class="text-sm text-gray-600">Expert Instructors</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modal Footer -->
+                <div class="flex flex-col sm:flex-row gap-4 mt-8 pt-6 border-t border-gray-200">
+                    <button onclick="closeCourseModal()" class="flex-1 border-2 border-gray-300 text-gray-700 py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:bg-gray-50">
+                        Close
+                    </button>
+                    <button id="modalEnrollBtn" onclick="openEnrollModal()" class="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:from-blue-600 hover:to-purple-700">
+                        Enroll Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enrollment Modal -->
+    <div id="enrollModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between p-6 border-b border-gray-200">
+                <h2 class="text-xl font-bold text-gray-900">Enroll for Course</h2>
+                <button onclick="closeEnrollModal()" class="text-gray-400 hover:text-gray-600 text-2xl font-bold">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="p-6">
+                <div class="mb-4">
+                    <p class="text-gray-600 mb-4">Please fill out this form and we'll contact you within 24 hours to complete your enrollment.</p>
+                </div>
+                
+                <!-- Enrollment Form -->
+                <form id="enrollmentForm" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                        <input type="text" id="enrollName" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                        <input type="email" id="enrollEmail" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Phone Number *</label>
+                        <input type="tel" id="enrollPhone" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Course</label>
+                        <input type="text" id="enrollCourse" readonly class="w-full px-4 py-3 border border-gray-300 rounded-xl bg-gray-50">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Additional Message (Optional)</label>
+                        <textarea id="enrollMessage" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Any specific requirements or questions..."></textarea>
+                    </div>
+                    
+                    <div class="flex gap-4 mt-6">
+                        <button type="button" onclick="closeEnrollModal()" class="flex-1 border-2 border-gray-300 text-gray-700 py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:bg-gray-50">
+                            Cancel
+                        </button>
+                        <button type="submit" class="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:from-blue-600 hover:to-purple-700">
+                            Send Enrollment Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

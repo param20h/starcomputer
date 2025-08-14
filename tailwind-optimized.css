@@ -48,11 +48,75 @@
 }
 
 .animate-custom-pulse {
-    animation: customPulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-.animate-certificate-scroll {
-    animation: scroll 60s linear infinite;
+/* Modern Course Card Design - No Shadow, Clean Borders */
+.modern-course-card {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modern-course-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.modern-course-card .group:hover .transform {
+    transform: rotate(6deg);
+}
+
+/* Course Filter Buttons */
+.course-filter-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.course-filter-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+}
+
+.course-filter-btn.active {
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Gallery Section Improvements */
+.gallery-main-container {
+    position: relative;
+    background: linear-gradient(145deg, #f8fafc, #e2e8f0);
+    border: 2px solid #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+.gallery-main-container:hover {
+    transform: translateY(-2px);
+    border-color: #94a3b8;
+}
+
+.thumbnail-btn {
+    position: relative;
+    background: linear-gradient(145deg, #ffffff, #f1f5f9);
+    transition: all 0.3s ease;
+}
+
+.thumbnail-btn:hover {
+    transform: translateY(-2px);
+    border-color: #3b82f6 !important;
+}
+
+.thumbnail-btn.active {
+    border-color: #2563eb !important;
+    background: linear-gradient(145deg, #dbeafe, #bfdbfe);
+}
+
+/* Gallery Modal Improvements */
+#imageModal .relative {
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+    border: 2px solid #e2e8f0;
+}
+
+/* Remove any remaining shadows from gallery */
+#gallery img,
+#gallery button,
+#gallery .relative {
+    box-shadow: none !important;
 }
 
 .animate-fade-in-up {
