@@ -1,16 +1,28 @@
-# Star Computer Center - Robots.txt
-# Optimized for search engine crawling
+# Star Computer Center Golewala - Advanced Robots.txt
+# Optimized for "Star Computer Center Golewala" and "Amar Singh" searches
+# Enhanced for maximum search engine visibility
 
 User-agent: *
 Allow: /
 
-# Priority pages for crawling
+# Priority pages for enhanced crawling
 Allow: /index.html
 Allow: /sitemap.xml
 Allow: /manifest.json
 Allow: /logo.png
 Allow: /images/
 Allow: /certife/
+
+# Enhanced targeting paths (virtual URLs for SEO)
+Allow: /star-computer-center-golewala
+Allow: /amar-singh-computer-training
+Allow: /computer-courses-golewala-faridkot
+Allow: /excel-course-golewala
+Allow: /python-programming-faridkot
+Allow: /web-development-golewala
+Allow: /amar-singh-faridkot
+Allow: /computer-training-golewala
+Allow: /IT-training-golewala-faridkot
 
 # Stylesheets and scripts (allow for proper rendering)
 Allow: /tailwind-optimized.css
@@ -29,36 +41,127 @@ Disallow: /*-backup.*
 
 # Special instructions for different bots
 
-# Google Bot
+# Google Bot - Enhanced for local search
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
+Crawl-delay: 0.5
+Request-rate: 1/1s
 
-# Bing Bot
+# Bing Bot - Microsoft search optimization
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
+Request-rate: 1/2s
 
-# Yandex Bot
+# Yandex Bot - Russian search engine
 User-agent: YandexBot
 Allow: /
 Crawl-delay: 2
 
-# Social Media Bots (for better sharing)
+# Baidu Bot - Chinese search engine (for international reach)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# DuckDuckGo Bot - Privacy-focused search
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Social Media Bots (for better sharing and visibility)
 User-agent: facebookexternalhit
 Allow: /
+Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: LinkedInBot
 Allow: /
+Crawl-delay: 1
 
 User-agent: WhatsApp
 Allow: /
+Crawl-delay: 1
 
-# Sitemap location
+User-agent: TelegramBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: SkypeUriPreview
+Allow: /
+Crawl-delay: 1
+
+User-agent: InstagramBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: PinterestBot
+Allow: /
+Crawl-delay: 1
+
+# SEO Tools and Analytics Bots
+User-agent: MJ12bot
+Allow: /
+Crawl-delay: 5
+
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 3
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 3
+
+User-agent: MajesticSEO
+Allow: /
+Crawl-delay: 3
+
+User-agent: archive.org_bot
+Allow: /
+Crawl-delay: 2
+
+# Local Search and Directory Bots
+User-agent: LocalBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: YellowPagesBot
+Allow: /
+Crawl-delay: 2
+
+# News and Content Aggregators
+User-agent: GoogleNews
+Allow: /
+Crawl-delay: 1
+
+User-agent: BingNews
+Allow: /
+Crawl-delay: 1
+
+# Mobile-specific crawlers
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /certife/
+Allow: /logo.png
+Crawl-delay: 1
+
+# Sitemap locations (multiple for better indexing)
 Sitemap: https://starcomputercenter.in/sitemap.xml
 
-# Host directive (if using custom domain)
+# Host directive
 Host: starcomputercenter.in
+
+# Additional SEO directives
+# Clean-param: utm_source&utm_medium&utm_campaign
+
+# Enhanced metadata for search engines
+# Keywords: star computer center golewala, amar singh computer center, computer training faridkot
+# Description: Star Computer Center Golewala by Amar Singh - Best computer training in Faridkot
+# Location: Golewala, Faridkot, Punjab, India
+# Contact: info@starcomputercenter.com
