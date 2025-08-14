@@ -1,0 +1,84 @@
+# Star Computer Center - .gitignore
+# Protect your website from unwanted files in version control
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*.bak
+*-backup.*
+*-temp.*
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build outputs
+dist/
+build/
+.cache/
+
+# Email configuration (if any)
+email-config-private.js
+smtp-config.js
+
+# Development files
+test-*.html
+debug-*.js
+*.dev.*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Image editing files
+*.psd
+*.ai
+*.sketch
+
+# Documentation drafts
+*-draft.*
+*-notes.*
+README-*.md
+
+# Sensitive information
+private/
+confidential/
+internal/
