@@ -49,11 +49,6 @@
 - 🎯 Practical Training environment
 - ☕ Student Lounge for breaks and networking
 
-## 📞 **Contact Information**
-- **Email:** info@starcomputercenter.com
-- **Phone:** +91-XXXXXXXXXX
-- **Address:** [Your Address Here]
-
 ## 🔧 **Technical Implementation**
 
 ### **File Structure**
